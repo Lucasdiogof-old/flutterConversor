@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
 
   void _changeDolar(String text) {
     double dolar = double.parse(text);
-    controleReal.text = (dolar / this.dolar).toStringAsFixed(2);
+    controleReal.text = (dolar * this.dolar).toStringAsFixed(2);
     controleEuro.text = (dolar * this.dolar / euro).toStringAsFixed(2);
   }
 
