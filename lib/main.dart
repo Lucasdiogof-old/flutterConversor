@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.green,
         centerTitle: true,
       ),
-      //É um mapa pois o servidor nos retorna um mapa
+
       body: FutureBuilder<Map>(
           future: getData(),
           builder: (context, snapshot) {
